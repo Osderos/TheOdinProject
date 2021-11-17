@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>RockPaperScissors</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+</head>
+
+<body class="is-flex is-justify-content-center is-flex-direction-column is-align-content-center">
+  <div class="card" id="card">
+    <div class="columns">
+      <div class="column is-half is-offset-one-quarter">
+        <header class="card-header">
+          <p class="card-header-title is-size-2 is-justify-content-center">
+            ROCK PAPER SCISSORS GAME
+          </p>
+        </header>
+        <div class="card-content">
+          <div class="content">
+            <p class="is-size-3"><span id="playerPoints">0</span> TO <span id="computerPoints">0</span></p>
+            <p>Round result:<span id="roundResult"></span></p>
+            <p>Game result:<span id="gameResult"> Game not started</p>
+            </div>
+          </div>
+          <div id="buttons" class="is-flex is-flex-direction-column is-align-content-center">
+            <footer class="card-footer is-justify-content-center">
+              <div class="image is-96x96 is-flex is-flex-direction-column is-align-content-center">
+                <img src="rock.png" alt="">
+                <button id="rock" class="button is-info is-outlined">ROCK</button>
+              </div>
+              <div class="image is-96x96 is-flex is-flex-direction-column is-align-content-center">
+                <img src="paper.png" alt="">
+                <button id="paper" class="button is-info is-outlined">PAPER</button>
+              </div>
+              <div class="image is-96x96 is-flex is-flex-direction-column is-align-content-center">
+                <img src="scissors.png" alt="">
+                <button id="scissors" class="button is-info is-outlined">SCISSORS</button>
+              </div>
+            </footer>
+            <div id="spaceHolder">
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+
+    <script src="scripts.js"></script>
+  </body>
+  </html>
