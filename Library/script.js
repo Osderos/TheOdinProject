@@ -12,17 +12,7 @@ const isRead = document.querySelector("#isRead")
 const myLibrary=[]
 
 
-document.addEventListener('click',(e)=>{
-  let readStatus = e.target.innerText
-  document.querySelectorAll('.readBtn').forEach(function(btn){
-    if(readStatus==='Not read'){
-      btn.innerText = "Read"
 
-    }else if (readStatus==='Read'){
-      btn.innerText = "Not read"
-    }
-  })
-})
 
 
 addBookBtn.addEventListener('click', ()=>{
@@ -37,6 +27,7 @@ addBookBtnPopUp.addEventListener('click', ()=>{
   addBookToLibrary ()
   displayBooks ()
   removeBookFromList ()
+  isBookRead()
 })
 
 function Book(title,author,pages,read){
@@ -101,4 +92,18 @@ function removeBookFromList (){
       })
     })
 })
+}
+
+function isBookRead(){
+  document.querySelectorAll('.readBtn').forEach(function(btn){
+    btn.addEventListener('click',(e)=>{
+      let readStatus = e.target.innerText
+      if(readStatus==='Not read'){
+        btn.innerText = "Read"
+
+      }else if (readStatus==='Read'){
+        btn.innerText = "Not read"
+      }
+    })
+  })
 }

@@ -7,6 +7,14 @@ html, body{
   width: 100%;
 }
 
+.contentCointainer{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #a7c957;
+}
+
 button{
   background: #a7c957;
   padding: 10px 15px;
@@ -133,4 +141,15 @@ form{
 
 .row-cols-4{
   gap: 10px;
+}
+
+header,footer{
+  background-color: #386641;
+  color: #f2e8cf;
+  text-align: center;
+}
+
+
+.container{
+  margin: 10px;
 }
