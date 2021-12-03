@@ -1,0 +1,87 @@
+body{
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+section{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+.Inputcontainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: #457b9d;
+  color: #f1faee;
+  padding: 25px 15px;
+  border: 2px solid #a8dadc;
+  border-radius: 15px;
+  font-size: 26px;
+  width: fit-content;
+  gap: 10px 20px;
+  font-family: 'Roboto';
+  margin-top: 20%;
+}
+
+.playerName{
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+input{
+  font-size: 26px;
+}
+
+
+
+.buttons{
+  display: flex;
+  justify-content: flex-start;
+}
+
+
+button{
+  background: none;
+  color: white;
+  border: 2px solid;
+  padding: 1em 2em;
+  font-size: 1em;
+  transition: all 0.2s;
+}
+
+button:hover{
+  border-color: #f1faee;
+  color: #f1faee;
+  box-shadow: 0 0.5em 0.5em -0.4em #f1faee;
+  transform: translateY(-0.25em);
+  cursor: pointer;
+}
+
+.cell {
+  background: white;
+  border: black 1px solid;
+  width: 150px;
+  height: 150px;
+  margin: 0 auto;
+  margin-top: 0;
+  cursor: pointer;
+  display: inline-block;
+  float: left;
+
+}
+
+.row{
+  display: block;
+
+  width: 100%;
+}
+
+.mainPage{
+  width: 460px;
+}
