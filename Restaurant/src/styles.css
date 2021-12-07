@@ -1,0 +1,166 @@
+html{
+  height: 100%;
+  margin: 0;
+}
+body{
+  height: 100%;
+  margin: 0;
+  background-image: url('./restaurant.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+#content{
+  min-height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Header */
+
+.header-container{
+  height: 200px;
+  background-color: #023047;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  grid-row-gap: 25px;
+  padding-top: 25px;
+}
+
+.header-tabsContainer{
+  display: flex;
+  font-family: 'Fuzzy Bubbles';
+
+  color: white;
+  justify-content: space-around;
+
+}
+
+.header-title{
+  margin: 0;
+  font-family: 'Fuzzy Bubbles';
+  color: white;
+  word-spacing: 30px;
+  font-size: 68px
+}
+
+.header-button{
+  font-size: 46px;
+  transition: 1s;
+}
+
+.header-button:hover{
+  color: gold;
+  cursor: pointer;
+}
+
+.header-light{
+  transition: 0.5s;
+  height: 1px;
+  width: 1px;
+
+}
+
+.header-bar{
+  height: 5px;
+  width: auto;
+  background-color: gold;
+  transition: 0.5s;
+}
+
+/* Homepage */
+
+.homepage-content{
+  width: 50%;
+  color: white;
+  background-color: #023047;
+  padding: 25px;
+  transition: 1s;
+  border: 2px solid white;
+  text-align: center;
+}
+
+.homepage-content:hover{
+  background-color: hsla(63, 90%, 50%, 0.31)
+
+}
+
+.homepage-picture{
+  width: 250px;
+  height: 250px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  transition: 1s;
+  border: 2px solid white
+}
+
+.homepage-picture:hover{
+  border-radius: 50%;
+  border: 2px solid gold;
+  cursor: pointer;
+}
+
+/* Menu */
+
+.menu-content{
+  width: 50%;
+  background-color: #023047;
+  padding: 25px;
+  transition: 1s;
+  border: 2px solid white;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 75px;
+  justify-content: center;
+  gap: 25px;
+}
+
+.cell{
+  width: 270px;
+  height: 270px;
+  background-color: white;
+  border: 2px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+  padding: 0px 5px;
+}
+
+.cell:hover{
+  cursor: pointer;
+  transform: translateY(-5px);
+  border-color: gold;
+  box-shadow: 5px 5px 5px 5px rgba(245, 208, 39, 0.43);
+}
+
+.plate-title{
+  color: black;
+}
+
+.plate-content{
+  text-align: center;
+}
+
+/* Contact */
+
+.contact-content{
+  width: 50%;
+  color: white;
+  background-color: #023047;
+  padding: 25px;
+  transition: 1s;
+  border: 2px solid white;
+  display: flex;
+  flex-direction: column;
+}
+
+.detail{
+  font-size: 28px;
+}
